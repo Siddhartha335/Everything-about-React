@@ -1,0 +1,8 @@
+.sidebar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.div2 {
+    width: 100%;
+}
