@@ -1,9 +1,4 @@
-
-interface GreetProps  {
-    name:string;
-    date?:string;
-    isLoggedIn:boolean
-}
+import { GreetProps } from "./Greet.types"
 
 const Greet = (props:GreetProps)=> {
 
