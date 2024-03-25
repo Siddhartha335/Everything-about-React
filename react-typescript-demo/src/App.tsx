@@ -1,7 +1,12 @@
 import React from 'react'
 import './App.css'
-import { AuthContextProvider } from './context/UserContext'
-import User from './context/User'
+// import List from './generics/List'
+// import Profile from './auth/Profile'
+// import Private from './auth/Private'
+// import MutableRef from './ref/MutableRef'
+// import DomRef from './ref/DomRef'
+// import { AuthContextProvider } from './context/UserContext'
+// import User from './context/User'
 // import { ThemeContextProvider } from './context/ThemeContext'
 // import Bag from './context/Bag'
 // import Counter from './state/Counter'
@@ -72,9 +77,25 @@ function App() {
       {/* <ThemeContextProvider>
         <Bag />
       </ThemeContextProvider> */}
-      <AuthContextProvider>
+      {/* <AuthContextProvider>
         <User />
-      </AuthContextProvider>
+      </AuthContextProvider> */}
+      {/* <DomRef /> */}
+      {/* <MutableRef /> */}
+      {/* <Private isLoggedIn={true} Component={Profile} /> */}
+      {/* <List 
+        items={["apple","mango",'banana']}
+        showValue={(val)=> {console.log(val)}}
+      />
+      <List 
+        items={[1,2,3]}
+        showValue={(val)=> {console.log(val)}}
+      />
+      <List 
+        items={[true,false,true]}
+        showValue={(val)=> {console.log(val)}}
+      /> */}
+      
     </>
   )
 }
