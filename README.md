@@ -6,7 +6,7 @@
 
     #### Calculator App -> Understanding How React works and why it uses Virtual DOM to manipulate or update the state.
 
-    #### Todo app -> using Context API and useReducer hook to manage states and dynamic datas.
+    #### Todo app -> using Context API and useReducer hook to manage complex states by dispatching an action object.
 
     #### Social-media app -> A small app, where user can create and update their blog along with some server posts using DUMMY JSON Api's.
 
