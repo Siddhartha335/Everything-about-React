@@ -1,30 +1,30 @@
-import { createContext,useReducer } from "react";
+import { createContext, useReducer } from "react";
 
 export const TodoItemsContext = createContext({
-    todoItems:[],
-    handleNewItem:()=> {},
-    handleDeleteItem:()=> {}
-})
+  todoItems: [],
+  handleNewItem: () => {},
+  handleDeleteItem: () => {},
+});
 
 const todoItemsReducer = (todoItems, action) => {
-    let newItems = todoItems;
-    if (action.type === "NEW_ITEM") {
-      newItems = [
-        { todo: action.payload.todo, date: action.payload.duedate },
-        ...todoItems,
-      ];
-    } else if (action.type === "DELETE_ITEM") {
-      newItems = todoItems.filter((item, index) => {
-        return index !== action.payload.id;
-      });
-    }
-    return newItems;
-  };
+  let newItems = todoItems;
+  if (action.type === "NEW_ITEM") {
+    newItems = [
+      { todo: action.payload.todo, date: action.payload.duedate },
+      ...todoItems,
+    ];
+  } else if (action.type === "DELETE_ITEM") {
+    newItems = todoItems.filter((index) => {
+      return index !== action.payload.id;
+    });
+  }
+  return newItems;
+};
 
-const TodoItemsContextProvider = ({children})=> {
-    // const todoItems =['Buy Snacks','Go to College']
+const TodoItemsContextProvider = ({ children }) => {
+  // const todoItems =['Buy Snacks','Go to College']
   // const [todoItems, setTodoItems] = useState([]);
-  const [todoItems, dispatchTodoItems] =        useReducer(todoItemsReducer, []);
+  const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, []);
 
   const handleNewItem = (todo, duedate) => {
     // console.log(todo,duedate);
@@ -63,9 +63,9 @@ const TodoItemsContextProvider = ({children})=> {
         handleDeleteItem,
       }}
     >
-    {children}
+      {children}
     </TodoItemsContext.Provider>
-  )
-}
+  );
+};
 
 export default TodoItemsContextProvider;
