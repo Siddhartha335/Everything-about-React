@@ -2,9 +2,9 @@
 
 1.  You can find projects and my work(code) in this repository.
 
-    #### Clock app -> Using all the functionalities of react like props,reusable components, and handling dynamic data's using HOOKs such as useState.
+    #### Clock app -> Using all the functionalities of react like props and handling dynamic data's using HOOKs such as useState.
 
-    #### Calculator App -> Understanding How React works and why it uses Virtual DOM to manipulate or update the state.
+    #### Calculator App -> Understanding How React works and why it uses Virtual DOM to update the state which takes less memory compared to actual DOM.
 
     #### Todo app -> using Context API and useReducer hook to manage complex states by dispatching an action object.
 
