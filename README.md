@@ -14,6 +14,8 @@
 
     #### counter-react-redux -> Understanding how redux works and used in React, also used react-redux to apply redux on React projects.
 
+    #### HOC -> Learned Higher Order Components in React.
+
     #### counter-react-redux-toolkit -> Understanding how reduxjs/toolkit helps us to use redux easily as it manages the redux problems like:
 
         i. Store becoming too big
