@@ -10,7 +10,7 @@
 
     #### Social-media app -> A small app, where user can create and update their blog using React Context Api and useReducer hook along with some server posts using DUMMY JSON Api's.
 
-    #### redux -> Understanding how redux works and used in Javascript.
+    #### redux -> Understanding how redux works and used as a state management in Javascript.
 
     #### counter-react-redux -> Understanding how redux works and used in React, also used react-redux to apply redux on React projects.
 
