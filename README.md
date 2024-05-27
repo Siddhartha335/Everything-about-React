@@ -12,7 +12,7 @@
 
     #### redux -> Understanding how redux works and used as a state management in Javascript.
 
-    #### counter-react-redux -> Understanding how redux works and used in React, also used react-redux to apply redux on React projects.
+    #### counter-react-redux -> Understanding how redux works in React project, and  also used react-redux especially useSelector() and useDispatch() to apply state-management on React projects.
 
     #### HOC -> Learned Higher Order Components in React.
 
