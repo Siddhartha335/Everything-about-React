@@ -8,15 +8,15 @@ const INITIAL_DATA = {
 const counterReducer = (store = INITIAL_DATA, action) => {
   let newStore = store;
   if (action.type === "INCREMENT") {
-    newStore = { counter: store.counter + 1, privacy:store.privacy };
+    newStore = {  ...INITIAL_DATA,counter: store.counter + 1,};
   } else if (action.type === "DECREMENT") {
-    newStore = { counter: store.counter - 1, privacy:store.privacy  };
+    newStore = { ...INITIAL_DATA, counter: store.counter - 1, };
   } else if (action.type === "RESET") {
-    newStore = { counter: 0,privacy:store.privacy };
+    newStore = { ...INITIAL_DATA ,counter: 0};
   } else if (action.type === "ADD") {
-    newStore = { counter: action.payload.number + store.counter , privacy:store.privacy };
+    newStore = { ...INITIAL_DATA ,counter: action.payload.number + store.counter};
   } else if (action.type === "PRIVACY") {
-    newStore = { counter:store.counter,privacy:!store.privacy };
+    newStore = { ...INITIAL_DATA,privacy:!store.privacy };
   }
   return newStore;
 };
