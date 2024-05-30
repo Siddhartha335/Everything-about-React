@@ -14,7 +14,7 @@
 
     #### counter-react-redux -> Understanding how redux works in React project, and  also used react-redux especially useSelector() and useDispatch() to apply state-management on React projects.
 
-    #### HOC -> Learned Higher Order Components in React.
+    #### HOC -> Learned Higher Order Components(HOC) in React.
 
     #### counter-react-redux-toolkit -> Understanding how reduxjs/toolkit helps us to use redux easily as it manages the redux problems like:
 
